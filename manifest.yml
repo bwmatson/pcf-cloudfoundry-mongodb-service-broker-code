@@ -9,6 +9,6 @@ applications:
     SERVICE_ID: mongodb-service-broker-bwm
     SERVICE_NAME: MongoDB-BWM
     PLAN_ID: mongo-plan-bwm
-    MONGODB_HOST: 127.0.0.1:27017
+    MONGODB_HOST: bmatson.ddns.net
   path: build/libs/cloudfoundry-mongodb-service-broker.jar
   stack: cflinuxfs2
