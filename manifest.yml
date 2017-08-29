@@ -1,0 +1,14 @@
+applications:
+- name: mongodb-service-broker
+  instances: 1
+  memory: 750M
+  disk_quota: 1024M
+  routes:
+  - route: mongodb-service-broker-popelike-perambulation.cfapps.io
+  env: 
+    SERVICE_ID: mongodb-service-broker-bwm
+    SERVICE_NAME: MongoDB-BWM
+    PLAN_ID: mongo-plan-bwm
+    MONGODB_HOST: 127.0.0.1:27017
+  path: build/libs/cloudfoundry-mongodb-service-broker.jar
+  stack: cflinuxfs2
